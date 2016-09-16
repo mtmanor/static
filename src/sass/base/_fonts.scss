@@ -1,0 +1,36 @@
+
+@font-face {
+  font-family: 'Euclid';
+	font-style: normal;
+	font-weight: 400;
+  src: url('/dist/fonts/EuclidFlex-Regular-WebS.woff2') format('woff2'),
+       url('/dist/fonts/EuclidFlex-Regular-WebS.woff') format('woff'),
+       url('/dist/fonts/EuclidFlex-Regular-WebS.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Euclid';
+	font-style: normal;
+	font-weight: 500;
+  src: url('/dist/fonts/EuclidFlex-Medium-WebS.woff2') format('woff2'),
+       url('/dist/fonts/EuclidFlex-Medium-WebS.woff') format('woff'),
+       url('/dist/fonts/EuclidFlex-Medium-WebS.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Publico';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/dist/fonts/PublicoBanner-Roman-Web.eot');
+  src: url('/dist/fonts/PublicoBanner-Roman-Web.woff2') format('woff2'),
+       url('/dist/fonts/PublicoBanner-Roman-Web.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Publico';
+	font-style: normal;
+	font-weight: 300;
+	src: url('/dist/fonts/PublicoHeadline-Light-Web.eot');
+  src: url('/dist/fonts/PublicoHeadline-Light-Web.woff2') format('woff2'),
+       url('/dist/fonts/PublicoHeadline-Light-Web.woff') format('woff');
+}

@@ -1,0 +1,83 @@
+/**
+Class Naming Structure: block--element__modifier
+**/
+
+$sans: 'Euclid', Helvetica, arial, sans-serif;
+$serif: 'Publico', Georgia, serif;
+
+$base: 24px;
+
+$weight-light:  300;
+$weight-regular:   400;
+$weight-medium: 500;
+
+body {
+  color: $navy;
+  font: $weight-regular 1em/1.5em $sans;
+}
+
+h1,h2,h3,h4,h5 {
+  line-height: 1;
+}
+
+strong, b {
+  font-weight: $weight-medium;
+}
+
+em {
+  font-style: none;
+}
+
+.title__h1 {
+  font-family: $serif;
+  font-weight: $weight-regular;
+
+  @include bp-min-width($medium) {
+    @include font-size(36px);
+  }
+}
+
+.title__h2 {
+  font-family: $serif;
+  font-weight: $weight-light;
+
+  @include bp-min-width($medium) {
+    @include font-size(24px);
+  }
+}
+
+.title__h3 {
+  @include bp-min-width($medium) {
+  }
+}
+
+.title__h4 {
+  @include bp-min-width($medium) {
+  }
+}
+
+.title__h5 {
+  @include bp-min-width($medium) {
+  }
+}
+
+.body-content h1,
+.body-content h2,
+.body-content h3,
+.body-content h4 {
+}
+
+.body-content p,
+.body-content ul,
+.body-content ol {
+}
+
+.body-content p:not(:last-child),
+.body-content ul:not(:last-child),
+.body-content ol:not(:last-child),
+.body-content blockquote:not(:last-child) {
+  margin-bottom: $base;
+}
+
+.body-content blockquote {
+}

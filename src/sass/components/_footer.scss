@@ -1,0 +1,29 @@
+
+.footer {
+	background: $navy;
+	color: #fff;
+}
+
+.footer .container  {
+	padding-top: $base*2;
+	padding-bottom: $base*2;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer-mission p {
+	@include font-size(18px);
+	max-width: 400px;
+}
+
+.footer-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-nav li {
+	@include font-size(18px);
+	width: 50%;
+}

@@ -1,0 +1,26 @@
+
+a {
+  @include global-transition(.1s);
+
+	&:hover {
+	}
+}
+
+@mixin btn {
+  display: inline-block;
+}
+
+.btn {
+  @include btn;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+  @include global-transition(.1s);
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

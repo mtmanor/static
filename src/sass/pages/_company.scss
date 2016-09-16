@@ -1,0 +1,154 @@
+
+.company-hero {
+  background-color: #b9d5e5;
+}
+
+.company-hero .hero-content {
+  color: $royal;
+
+  @include bp-max-width($medium) {
+    text-align: center;
+  }
+
+  @include bp-min-width($medium) {
+    max-width: 480px;
+    padding-top: $base;
+    padding-right: 20px;
+  }
+}
+
+.how-it-works .flex-row {
+  justify-content: center;
+}
+
+.how-it-works .block:not(:last-child) {
+  margin-bottom: $base*2;
+  padding: 0 20px;
+}
+
+.our-clients {
+  background: $lt-grey;
+}
+
+.our-vision .block {
+  padding: 0 5%;
+}
+
+.our-vision .flex-row {
+  margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
+  }
+}
+
+.our-vision .block-image {
+  max-width: 260px;
+  margin: 0 auto $base;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
+  }
+}
+
+.careers {
+  background: $lt-grey;
+}
+
+.careers .block {
+  margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*3;
+  }
+}
+
+.careers .block-title {
+  margin-bottom: 10px;
+}
+
+.job-list--item {
+  @include line-height(30px);
+}
+
+.job-list--item:not(:last-child) {
+  margin-bottom: $base;
+}
+
+.job-list--title {
+  font-weight: $weight-bold;
+}
+
+.job-list--title a {
+  color: $dk-grey;
+
+  &:hover {
+    color: $royal;
+  }
+}
+
+.our-offices .block {
+  margin-bottom: $base*2;
+}
+
+.our-offices .block-image {
+  max-width: 136px;
+  margin: 0 auto $base;
+}
+
+.team {
+  background: $lt-grey;
+}
+
+.team-list {
+  justify-content: center;
+}
+
+.team-list .block {
+  margin-bottom: $base*2;
+}
+
+.team-list .block-image {
+  max-width: 130px;
+  margin: 0 auto $base;
+}
+
+.team-list--name,
+.team-list--title {
+  @include line-height(28px);
+}
+
+.team-list--name {
+  font-weight: $weight-bold;
+}
+
+.our-story {
+  background: $lime;
+}
+
+.timeline .col-1-3 {
+  padding-right: 30px;
+}
+
+.timeline--year {
+  margin-bottom: 12px;
+  font-weight: $weight-bold;
+}
+
+.timeline-list--item {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 40px;
+}
+
+.timeline-list--count {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timeline-illustration {
+  @include bp-max-width($medium) {
+    order: -1;
+  }
+}

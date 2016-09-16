@@ -1,0 +1,86 @@
+
+.post-hero {
+  background-color: $dk-grey;
+}
+
+.post-content {
+  @include bp-min-width($large) {
+    width: calc(100% - 245px);
+    padding-left: 40px;
+  }
+}
+
+.post-date,
+.post-breadcrumb {
+  margin-bottom: $base;
+  color: $red;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+
+  @include bp-min-width($large) {
+    margin-bottom: $base*2;
+  }
+}
+
+.post-breadcrumb__bold {
+  font-weight: $weight-bold;
+}
+
+.post-title {
+  @include font-size(28px);
+  margin-bottom: $base;
+  font-family: $serif;
+  font-weight: $weight-light;
+}
+
+.post-results .container {
+  padding-top: 0;
+  padding-left: 245px;
+}
+
+.post-results--title {
+  margin-bottom: $base;
+}
+
+.results-grid--item {
+  text-align: center;
+}
+
+.stat-circle {
+  position: relative;
+  width: 140px;
+  height: 137px;
+  margin: 0 auto 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stat-circle__seafoam {
+  background-image: $stat-bg-seafoam;
+}
+
+.stat-circle__teal {
+  background-image: $stat-bg-teal;
+}
+
+.stat-circle__sky {
+  background-image: $stat-bg-sky;
+}
+
+.stat-circle__blue {
+  background-image: $stat-bg-blue;
+}
+
+.stat-circle .stat {
+  @include font-size(28px);
+  @include absolute-center;
+  font-family: $serif;
+}
+
+.stat-label {
+  font-family: $serif;
+}
+
+.post-related {
+  background: $lt-grey;
+}
