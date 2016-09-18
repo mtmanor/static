@@ -1,0 +1,53 @@
+
+
+.product-grid--item {
+	margin-bottom: 30px;
+}
+
+.product-grid--item-wrapper {
+	position: relative;
+	padding: 30px 20px;
+	background: $grey;
+	text-align: center;
+}
+
+.product-grid--overlay {
+	transition: opacity .15s ease-in;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+	background: rgba($navy, .95);
+	color: #fff;
+}
+
+.product-grid--item-wrapper:hover .product-grid--overlay {
+	opacity: 1;
+}
+
+
+.product-grid--overlay-info {
+	@include font-size(24px);
+	font-family: $serif;
+	font-weight: $weight-light;
+}
+
+.product-grid--overlay-title,
+.product-grid--overlay-info {
+	margin-bottom: $base;
+	line-height: 1.25;
+}
+
+.product-grid--thumb {
+	display: inline-block;
+	max-width: 300px;
+	margin-bottom: 6px;
+}
