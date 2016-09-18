@@ -1,21 +1,44 @@
 @@include('../partials/header.html')
 
-<main class="main">
-
-  <section class="hero">
+  <section class="home-hero">
     <div class="container">
-      <h1 class="title__h1">Headline 1</h1>
-      <h2 class="title__h2">Headline 2</h2>
-      <h3 class="title__h3">Headline 3</h3>
+      <a href="" class="home-hero--block">
+        <h1 class="home-hero--title title__h1">Herschel Supply Retreat Black Canvas Bag</h1>
+        <p ><span class="btn btn__salmon">2195 SEK</span></p>
+      </a>
     </div>
   </section>
 
-  <section class="home-recommended">
-    <div class="container">
-      <h2 class="title_h1">Rekommenderat</h2>
+  <section class="recommended-products">
+    <h2 class="section-title title__h1">Rekommenderat</h2>
+    <div class="recommended-products--wrapper">
+      <div class="container">
+
+        <div class="recommended-grid flex-grid">
+          <a href="" class="recommended-grid--item col-1-3">
+            <div class="recommended-grid--thumb">
+
+            </div>
+            <h3 class="recommended-grid--title">Sandqvist Alva (Svart)</h3>
+            <h4 class="recommended-grid--category">Ryggsäck</h4>
+            <p class="recommended-grid--price"><span class="btn btn__navy">2195 SEK</span></p>
+          </a>
+        </div>
+
+        <div class="recommended-products--cta">
+          <p><a href="" class="btn btn__navy">Visa alla rekommenderade</a></p>
+        </div>
+
+      </div>
     </div>
   </section>
 
-</main>
+  <section>
+    <div class="container">
+      <div class="product-grid flex-grid">
+
+      </div>
+    </div>
+  </section>
 
 @@include('../partials/footer.html')

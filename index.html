@@ -50,6 +50,11 @@
     </g>
   </symbol>
 
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <title>Submit - Arrow Right</title>
+    <path d="M19.535 13l-9.24 9.208 1.41 1.417 10.998-10.958.711-.709-.71-.708L11.705.292l-1.412 1.416L19.62 11H0v2h19.535z"/>
+  </symbol>
+
 </svg>
 
 
@@ -94,48 +99,104 @@
       </div>
     </header>
 
+    <main class="main">
 
-<main class="main">
 
-  <section class="hero">
+  <section class="home-hero">
     <div class="container">
-      <h1 class="title__h1">Headline 1</h1>
-      <h2 class="title__h2">Headline 2</h2>
-      <h3 class="title__h3">Headline 3</h3>
+      <a href="" class="home-hero--block">
+        <h1 class="home-hero--title title__h1">Herschel Supply Retreat Black Canvas Bag</h1>
+        <p ><span class="btn btn__salmon">2195 SEK</span></p>
+      </a>
     </div>
   </section>
 
-  <section class="home-recommended">
-    <div class="container">
-      <h2 class="title_h1">Rekommenderat</h2>
-    </div>
-  </section>
+  <section class="recommended-products">
+    <h2 class="section-title title__h1">Rekommenderat</h2>
+    <div class="recommended-products--wrapper">
+      <div class="container">
 
-</main>
+        <div class="recommended-grid flex-grid">
+          <a href="" class="recommended-grid--item col-1-3">
+            <div class="recommended-grid--thumb">
 
-    <footer class="footer">
-      <div class="container flex-row">
-
-        <div class="footer-mission col-1-2">
-          <a href="/" class="header-logo">
-            <svg class="icon-logo-mark">
-              <use href="#icon-logo-mark"></use>
-            </svg>
+            </div>
+            <h3 class="recommended-grid--title">Sandqvist Alva (Svart)</h3>
+            <h4 class="recommended-grid--category">Ryggsäck</h4>
+            <p class="recommended-grid--price"><span class="btn btn__navy">2195 SEK</span></p>
           </a>
-          <p>Mt. Manor säljer noggrant utvalda livsstilsprylar och accessoarer. Vi brinner för tidlös design, hög kvalitet och hållbara material.</p>
         </div>
 
-        <nav class="footer-nav col-1-2">
-          <ul>
-            <li><a href="">Väskor</a></li>
-            <li><a href="">Om oss</a></li>
-            <li><a href="">Klockor</a></li>
-            <li><a href="">Köpvillkor</a></li>
-            <li><a href="">Fodral</a></li>
-            <li><a href="">Kontakt</a></li>
-            <li><a href="">Accessoarer</a></li>
-          </ul>
-        </nav>
+        <div class="recommended-products--cta">
+          <p><a href="" class="btn btn__navy">Visa alla rekommenderade</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="product-grid flex-grid">
+
+      </div>
+    </div>
+  </section>
+
+      <section class="bottom-content">
+        <div class="container">
+
+          <div class="flex-grid">
+            <div class="bottom-content--newsletter col-1-2">
+              <div class="bottom-content--wrapper">
+                <h3 class="title__h1">Nyheter &amp; Erbjudanden</h3>
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Din mailadress här" class="newsletter-form--input" />
+                  <button class="newsletter-form--btn">
+                    <svg class="icon-arrow-right">
+                      <use href="#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="bottom-content--generic col-1-2">
+              <div class="bottom-content--wrapper">
+                <h3 class="title__h1">Frakt &amp; Leverans</h3>
+                <p>Alltid fri frakt och 1-3 arbetsdagar i leverans-tid med Posten eller DHL till utlämningsställe om inte annat anges.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="flex-grid">
+          <div class="footer-mission col-1-2">
+            <a href="/" class="footer-logo">
+              <svg class="icon-logo-mark">
+                <use href="#icon-logo-mark"></use>
+              </svg>
+            </a>
+            <p>Mt. Manor säljer noggrant utvalda livsstilsprylar och accessoarer. Vi brinner för tidlös design, hög kvalitet och hållbara material.</p>
+          </div>
+          <nav class="footer-nav col-1-2">
+            <ul>
+              <li><a href="">Väskor</a></li>
+              <li><a href="">Om oss</a></li>
+              <li><a href="">Klockor</a></li>
+              <li><a href="">Köpvillkor</a></li>
+              <li><a href="">Fodral</a></li>
+              <li><a href="">Kontakt</a></li>
+              <li><a href="">Accessoarer</a></li>
+            </ul>
+          </nav>
+        </div>
 
       </div>
     </footer>

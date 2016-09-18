@@ -7,9 +7,9 @@ $serif: 'Publico', Georgia, serif;
 
 $base: 24px;
 
-$weight-light:  300;
-$weight-regular:   400;
-$weight-medium: 500;
+$weight-light:   300;
+$weight-regular: 400;
+$weight-medium:  500;
 
 body {
   color: $navy;
@@ -58,6 +58,15 @@ em {
 
 .title__h5 {
   @include bp-min-width($medium) {
+  }
+}
+
+.section-title {
+  margin-bottom: $base;
+  text-align: center;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
   }
 }
 

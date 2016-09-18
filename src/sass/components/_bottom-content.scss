@@ -1,0 +1,72 @@
+
+.bottom-content .container {
+	padding-top: $base*2;
+	padding-bottom: $base*3;
+}
+
+.bottom-content .col-1-2 {
+	flex: 1 0 auto;
+	min-height: 318px;
+}
+
+.bottom-content--wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: $base*3 7% $base;
+	text-align: center;
+}
+
+.bottom-content--newsletter .bottom-content--wrapper {
+	background: $navy;
+	color: #fff;
+}
+
+.bottom-content--generic .bottom-content--wrapper {
+	background: $salmon;
+	color: $navy;
+}
+
+.bottom-content .title__h1 {
+	margin-bottom: $base*1.5;
+}
+
+.newsletter-form {
+	position: relative;
+	// max-width: 464px;
+}
+
+.newsletter-form--input {
+	@include font-size(24px);
+	width: 100%;
+	height: 60px;
+	padding: 0 80px 0 20px;
+	background: $navy;
+	border: 2px solid $salmon;
+	color: $salmon;
+}
+
+.newsletter-form--input::placeholder {
+	color: $salmon;
+}
+
+.newsletter-form--btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: $salmon;
+}
+
+.newsletter-form--btn .icon-arrow-right {
+	width: 24px;
+	height: 24px;
+	fill: $navy;
+}
+
+.bottom-content--generic p {
+	@include font-size(24px);
+	line-height: 1.333;
+}

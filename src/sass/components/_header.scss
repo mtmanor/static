@@ -15,11 +15,13 @@
 }
 
 .header .container {
+	position: relative;
 	display: flex;
 	align-items: center;
 
 	@include bp-min-width($medium) {
 		width: 94%;
+		height: 146px;
     padding-top: 30px;
     padding-bottom: 30px;
 		justify-content: space-between;
@@ -27,8 +29,8 @@
 }
 
 .header-logo {
+	@include absolute-center;
 	display: block;
-	align-self: center;
 	width: 108px;
 	height: 87px;
 }

@@ -1,11 +1,11 @@
 
-.flex-row {
+.flex-grid {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -18px;
 }
 
-.flex-row [class*='col-'] {
+.flex-grid [class*='col-'] {
   @include bp-max-width($medium) {
     width: 100%;
   }

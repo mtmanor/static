@@ -13,25 +13,22 @@ select,
 textarea {
   font-family: inherit;
   line-height: normal;
+  border: none;
+  outline: none;
 }
 
 .form-input {
   width: 100%;
   height: 40px;
   padding: 0 20px;
-  border: 1px solid $grey;
-  outline: none;
+  border: 1px solid $navy;
 }
 
 textarea {
   width: 100%;
   height: $base*4;
   padding: 12px 20px;
-  border: 1px solid $grey;
-  outline: none;
-  font-family: $sans;
-  font-size: 1em;
-  line-height: normal;
+  border: 1px solid $navy;
 }
 
 ::placeholder {}
