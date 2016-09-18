@@ -61,9 +61,14 @@
 }
 
 .newsletter-form--btn .icon-arrow-right {
+	transition: margin .1s ease-in;
 	width: 24px;
 	height: 24px;
 	fill: $navy;
+}
+
+.newsletter-form--btn:hover .icon-arrow-right {
+	margin-right: -6px;
 }
 
 .bottom-content--generic p {
