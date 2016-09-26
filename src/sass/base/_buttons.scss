@@ -38,6 +38,26 @@ a {
   }
 }
 
+.btn__white {
+  border-color: #fff;
+  color: #fff;
+
+  &:hover {
+    background: #fff;
+    color: $navy;
+  }
+}
+
+.btn__grey {
+  border-color: $grey;
+  color: $grey;
+
+  &:hover {
+    background: $grey;
+    color: $navy;
+  }
+}
+
 
 input[type="submit"],
 input[type="button"],
