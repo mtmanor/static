@@ -4,14 +4,11 @@
 }
 
 .header-message {
+	@include font-size(14px);
 	padding: 12px;
 	background: #000;
 	color: #fff;
 	text-align: center;
-
-	@include bp-min-width($medium) {
-		padding: $base;
-	}
 }
 
 .header .container {
@@ -21,28 +18,55 @@
 
 	@include bp-min-width($medium) {
 		width: 94%;
+		height: 72px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+		justify-content: space-between;
+  }
+}
+
+.home .header .container {
+	@include bp-min-width($medium) {
 		height: 146px;
     padding-top: 30px;
     padding-bottom: 30px;
-		justify-content: space-between;
   }
 }
 
 .header-logo {
 	@include absolute-center;
 	display: block;
+	width: 46px;
+	height: 46px;
+}
+
+.home .header-logo {
 	width: 108px;
 	height: 87px;
 }
 
 .icon-logo {
+	display: none;
 	width: 108px;
 	height: 87px;
 }
 
 .icon-logo-mark {
-	width: 63px;
-	height: 63px;
+	width: 46px;
+	height: 46px;
+}
+
+.home .header-logo {
+	width: 108px;
+	height: 87px;
+}
+
+.home .icon-logo {
+	display: inline-block;
+}
+
+.home .icon-logo-mark {
+	display: none;
 }
 
 .header-actions {

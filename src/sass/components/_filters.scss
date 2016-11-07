@@ -1,0 +1,40 @@
+
+.product-filters {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.filter--select {
+	margin-right: 20px;
+}
+
+.filter--select select {
+	padding: 0 20px 0 0;
+	background: none;
+	border: none;
+}
+
+.filter--select-container {
+  position: relative;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 8px;
+    height: 1px;
+    background: $navy;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+    right: 9px;
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+    right: 4px;
+  }
+}

@@ -52,26 +52,24 @@ select {
 .form-item--select .form-item--container {
   position: relative;
 
-  &:before {
+  &:before,
+  &:after {
     content: '';
-    transform: rotate(45deg);
     position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 16px;
+    top: 12px;
+    width: 12px;
     height: 1px;
-    background: $grey;
+    background: $navy;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+    right: 30px;
   }
 
   &:after {
-    content: '';
     transform: rotate(-45deg);
-    position: absolute;
-    top: 30px;
-    right: 19px;
-    width: 16px;
-    height: 1px;
-    background: $grey;
+    right: 21px;
   }
 }
 

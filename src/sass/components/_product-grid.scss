@@ -1,4 +1,10 @@
 
+.grid-filters {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 12px;
+}
 
 .product-grid--item {
 	margin-bottom: 30px;
@@ -6,6 +12,7 @@
 
 .product-grid--item-wrapper {
 	position: relative;
+	height: 100%;
 	padding: 30px 20px;
 	background: $grey;
 	text-align: center;
@@ -33,7 +40,6 @@
 	opacity: 1;
 }
 
-
 .product-grid--overlay-info {
 	@include font-size(24px);
 	font-family: $serif;
@@ -50,4 +56,19 @@
 	display: inline-block;
 	max-width: 300px;
 	margin-bottom: 6px;
+}
+
+.product-grid--product-title {
+	@include font-size(18px);
+	margin-bottom: 2px;
+	font-family: $sans;
+	font-weight: $weight-medium;
+}
+
+.product-grid--product-type {
+	font-weight: $weight-regular;
+}
+
+.product-grid--product-price {
+	@include font-size(18px);
 }

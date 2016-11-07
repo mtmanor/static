@@ -63,3 +63,17 @@
     opacity: 0;
   }
 }
+
+.secondary-nav {
+  background: $salmon;
+}
+
+.secondary-nav .container {
+  padding: $base 0;
+}
+
+.secondary-nav a {
+  margin-right: 20px;
+  color: #fff;
+  font-weight: $weight-medium;
+}

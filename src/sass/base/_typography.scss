@@ -47,7 +47,10 @@ em {
 }
 
 .title__h3 {
+  font-weight: $weight-medium;
+
   @include bp-min-width($medium) {
+    @include font-size(24px);
   }
 }
 
