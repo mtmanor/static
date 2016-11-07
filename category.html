@@ -55,6 +55,16 @@
     <path d="M19.535 13l-9.24 9.208 1.41 1.417 10.998-10.958.711-.709-.71-.708L11.705.292l-1.412 1.416L19.62 11H0v2h19.535z"/>
   </symbol>
 
+  <symbol id="icon-pager-next" viewBox="0 0 11 11">
+    <title>Pager Next</title>
+    <path d="M5 .04l5 5.46-5 5.46m4.999-5.415H0" fill="none"/>
+  </symbol>
+
+  <symbol id="icon-pager-prev" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+    <title>Pager Previous</title>
+    <path d="M6 10.96L1 5.5 6 .04M1.001 5.455H11" fill="none"/>
+  </symbol>
+
 </svg>
 
     <div class="cart-overlay"></div>
@@ -310,13 +320,22 @@
       </div>
 
       <div class="pager">
-        <a href="" class="pager-item">1</a>
+        <a href="" class="pager-item">
+          <svg class="icon-pager-prev pager-icon">
+            <use href="#icon-pager-prev"></use>
+          </svg>
+        </a>
+        <a href="" class="pager-item pager-item__current">1</a>
         <a href="" class="pager-item">2</a>
         <a href="" class="pager-item">3</a>
         <a href="" class="pager-item">4</a>
         <a href="" class="pager-item">5</a>
         <a href="" class="pager-item">6</a>
-        <a href="" class="pager-item">7</a>
+        <a href="" class="pager-item">
+          <svg class="icon-pager-next pager-icon">
+            <use href="#icon-pager-next"></use>
+          </svg>
+        </a>
       </div>
 
     </div>
