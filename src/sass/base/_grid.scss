@@ -2,7 +2,10 @@
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -14px;
+
+  @include bp-min-width($medium) {
+    margin: 0 -14px;
+  }
 }
 
 .flex-grid [class*='col-'] {

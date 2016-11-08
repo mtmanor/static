@@ -13,16 +13,7 @@
 
 .header .container {
 	position: relative;
-	display: flex;
-	align-items: center;
-
-	@include bp-min-width($medium) {
-		width: 94%;
-		height: 72px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-		justify-content: space-between;
-  }
+	height: 72px;
 }
 
 .home .header .container {
@@ -69,18 +60,37 @@
 	display: none;
 }
 
-.header-actions {
-	display: flex;
-	align-items: center;
+.header-search,
+.header-cart-link {
+	@include vertical-center;
 }
 
-.header-actions [class^="icon-"] {
-	fill: #fff;
+.header-cart-link {
+	right: 0;
+
+	@include bp-max-width($large) {
+    right: 20px;
+  }
 }
 
 .header-search {
-	position: relative;
-	padding-left: 30px;
+	right: 80px;
+
+	@include bp-min-width($large) {
+		padding-left: 30px;
+		right: 60px;
+	}
+}
+
+.header-search [class^="icon-"],
+.header-cart-link [class^="icon-"] {
+	fill: #fff;
+}
+
+.header-search--form {
+	@include bp-max-width($large) {
+		display: none;
+	}
 }
 
 .header-search--input {
@@ -99,15 +109,22 @@
 	background: none;
 }
 
-.header-search--btn .icon-search {
+.header-search .icon-search,
+.mobile-search .icon-search {
 	width: 26px;
 	height: 26px;
 }
 
-.header-cart-link {
-	position: relative;
+.header-search--trigger {
 	display: block;
-	margin-left: 16px;
+
+	@include bp-min-width($large) {
+		display: none;
+	}
+}
+
+.header-cart-link {
+	display: inline-block;
 	padding-top: 8px;
 	padding-left: 12px;
 }
@@ -128,4 +145,48 @@
 .header-cart-link .icon-cart {
 	width: 28px;
 	height: 25px;
+}
+
+.mobile-search {
+	overflow: hidden;
+	transition: all .2s ease-in;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 0;
+	background: $navy;
+
+	&.js-is-visible {
+		height: 72px;
+		bottom: -72px;
+	}
+
+	@include bp-min-width($large) {
+		display: none;
+	}
+}
+
+.mobile-search--input {
+	@include font-size(24px);
+	width: 100%;
+	height: 72px;
+	padding-left: 20px;
+	background: $grey;
+	color: $navy;
+}
+
+.mobile-search--input::placeholder {
+	color: $navy;
+}
+
+.mobile-search--btn {
+	@include vertical-center;
+	right: 20px;
+	width: 30px;
+	background: none;
+}
+
+.mobile-search--btn .icon-search {
+	fill: $navy;
 }

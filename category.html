@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mt Manor</title>
     <link href="/dist/css/main.css" rel="stylesheet" media="all">
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -60,7 +57,7 @@
     <path d="M5 .04l5 5.46-5 5.46m4.999-5.415H0" fill="none"/>
   </symbol>
 
-  <symbol id="icon-pager-prev" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-pager-prev" viewBox="0 0 11 11">
     <title>Pager Previous</title>
     <path d="M6 10.96L1 5.5 6 .04M1.001 5.455H11" fill="none"/>
   </symbol>
@@ -152,9 +149,9 @@
       <div class="order-summary--total">
         <span class="order-summary--total-wrapper">10455:-</span>
       </div>
-      <div class="order-summary--check-out">
-        <button class="continue-shopping-btn btn btn__grey">Continue Shopping</button>
-        <button class="btn btn__salmon">Checkout</button>
+      <div class="order-summary--checkout">
+        <button class="btn btn__grey continue-shopping-btn">Continue Shopping</button>
+        <button class="btn btn__salmon checkout-btn">Checkout</button>
       </div>
     </div>
 
@@ -169,6 +166,7 @@
       <div class="container">
 
         <nav class="main-nav">
+          <a href="" class="hamburger"><span class="hamburger--bar"></span></a>
           <ul>
             <li><a href="category.html">Väskor</a></li>
             <li><a href="">Klockor</a></li>
@@ -179,29 +177,44 @@
 
         <a href="/" class="header-logo">
           <svg class="icon-logo">
-            <use href="#icon-logo"></use>
+            <use xlink:href="#icon-logo"></use>
           </svg>
           <svg class="icon-logo-mark">
-            <use href="#icon-logo-mark"></use>
+            <use xlink:href="#icon-logo-mark"></use>
           </svg>
         </a>
 
-        <div class="header-actions">
-          <form class="header-search">
+        <div class="header-search">
+          <a href="" class="header-search--trigger">
+            <svg class="icon-search">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </a>
+          <form class="header-search--form">
             <input type="text" class="header-search--input" />
             <button class="header-search--btn">
               <svg class="icon-search">
-                <use href="#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
             </button>
           </form>
-          <a href="" class="header-cart-link">
-            <div class="header-cart-link--count">2</div>
-            <svg class="icon-cart">
-              <use href="#icon-cart"></use>
-            </svg>
-          </a>
         </div>
+
+        <form class="mobile-search">
+          <input type="text" class="mobile-search--input" placeholder="Search" />
+          <button class="mobile-search--btn">
+            <svg class="icon-search">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <a href="" class="header-cart-link">
+          <div class="header-cart-link--count">2</div>
+          <svg class="icon-cart">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+        </a>
 
       </div>
     </header>
@@ -323,7 +336,7 @@
       <div class="pager">
         <a href="" class="pager-item">
           <svg class="icon-pager-prev pager-icon">
-            <use href="#icon-pager-prev"></use>
+            <use xlink:href="#icon-pager-prev"></use>
           </svg>
         </a>
         <a href="" class="pager-item pager-item__current">1</a>
@@ -334,7 +347,7 @@
         <a href="" class="pager-item">6</a>
         <a href="" class="pager-item">
           <svg class="icon-pager-next pager-icon">
-            <use href="#icon-pager-next"></use>
+            <use xlink:href="#icon-pager-next"></use>
           </svg>
         </a>
       </div>
@@ -379,7 +392,7 @@
                   <input type="email" placeholder="Din mailadress här" class="newsletter-form--input" />
                   <button class="newsletter-form--btn">
                     <svg class="icon-arrow-right">
-                      <use href="#icon-arrow-right"></use>
+                      <use xlink:href="#icon-arrow-right"></use>
                     </svg>
                   </button>
                 </form>
@@ -405,7 +418,7 @@
           <div class="footer-mission col-1-2">
             <a href="/" class="footer-logo">
               <svg class="icon-logo-mark">
-                <use href="#icon-logo-mark"></use>
+                <use xlink:href="#icon-logo-mark"></use>
               </svg>
             </a>
             <p>Mt. Manor säljer noggrant utvalda livsstilsprylar och accessoarer. Vi brinner för tidlös design, hög kvalitet och hållbara material.</p>

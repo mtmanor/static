@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mt Manor</title>
     <link href="/dist/css/main.css" rel="stylesheet" media="all">
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
     @@include('svg.html')
@@ -21,6 +18,7 @@
       <div class="container">
 
         <nav class="main-nav">
+          <a href="" class="hamburger"><span class="hamburger--bar"></span></a>
           <ul>
             <li><a href="category.html">Väskor</a></li>
             <li><a href="">Klockor</a></li>
@@ -31,29 +29,44 @@
 
         <a href="/" class="header-logo">
           <svg class="icon-logo">
-            <use href="#icon-logo"></use>
+            <use xlink:href="#icon-logo"></use>
           </svg>
           <svg class="icon-logo-mark">
-            <use href="#icon-logo-mark"></use>
+            <use xlink:href="#icon-logo-mark"></use>
           </svg>
         </a>
 
-        <div class="header-actions">
-          <form class="header-search">
+        <div class="header-search">
+          <a href="" class="header-search--trigger">
+            <svg class="icon-search">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </a>
+          <form class="header-search--form">
             <input type="text" class="header-search--input" />
             <button class="header-search--btn">
               <svg class="icon-search">
-                <use href="#icon-search"></use>
+                <use xlink:href="#icon-search"></use>
               </svg>
             </button>
           </form>
-          <a href="" class="header-cart-link">
-            <div class="header-cart-link--count">2</div>
-            <svg class="icon-cart">
-              <use href="#icon-cart"></use>
-            </svg>
-          </a>
         </div>
+
+        <form class="mobile-search">
+          <input type="text" class="mobile-search--input" placeholder="Search" />
+          <button class="mobile-search--btn">
+            <svg class="icon-search">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <a href="" class="header-cart-link">
+          <div class="header-cart-link--count">2</div>
+          <svg class="icon-cart">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+        </a>
 
       </div>
     </header>

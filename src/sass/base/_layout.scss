@@ -1,23 +1,18 @@
 
+.js-no-scroll {
+  overflow: hidden;
+}
+
 .container {
-  width: 100%;
   max-width: 1264px;
   margin: 0 auto;
 
-  @include bp-max-width($medium) {
+  @include bp-max-width($large) {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 94%;
   }
-}
-
-.is-hidden {
-  display: none;
-}
-
-.is-visible {
-  display: block;
 }
