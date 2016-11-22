@@ -1,20 +1,44 @@
 
 .bottom-content .container {
 	padding-top: 0;
-	padding-bottom: $base*3;
+	padding-bottom: $base;
+
+	@include bp-min-width($medium) {
+		padding-bottom: $base*3;
+	}
 }
 
 .bottom-content .col-1-2 {
-	flex: 1 0 auto;
-	min-height: 318px;
+	@include bp-min-width($medium) {
+		flex: 1 0 auto;
+		min-height: 318px;
+	}
 }
 
 .bottom-content--wrapper {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
-	padding: $base*3 7% $base;
+	min-height: 240px;
+	padding: $base*2 7%;
 	text-align: center;
+
+	@include bp-max-width($medium) {
+		justify-content: center;
+	}
+
+	@include bp-min-width($medium) {
+		height: 100%;
+	}
+
+	@include bp-min-width($large) {
+		padding-top: $base*3;
+	}
+}
+
+.bottom-content--newsletter {
+	@include bp-max-width($medium) {
+		margin-bottom: $base;
+	}
 }
 
 .bottom-content--newsletter .bottom-content--wrapper {

@@ -5,8 +5,13 @@
 }
 
 .footer .container  {
-	padding-top: $base*2.75;
-	padding-bottom: $base*2.75;
+	padding-top: $base*2;
+	padding-bottom: $base*2;
+
+	@include bp-min-width($medium) {
+		padding-top: $base*2.75;
+		padding-bottom: $base*2.75;
+	}
 }
 
 .footer a {
@@ -16,6 +21,12 @@
 .footer-logo {
 	display: inline-block;
 	margin-bottom: $base;
+}
+
+.footer-mission {
+	@include bp-max-width($medium) {
+		margin-bottom: $base*2;
+	}
 }
 
 .footer-mission p {

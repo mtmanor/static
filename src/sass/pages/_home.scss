@@ -11,8 +11,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 400px;
 	background: $navy $home-hero no-repeat center;
 	background-size: cover;
+
+	@include bp-min-width($medium) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 
 	@include bp-min-width($medium) {
 		height: 600px;
@@ -24,6 +30,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 100%;
+	padding: $base 40px;
 	background: $navy;
 	color: #fff;
 	text-align: center;
@@ -31,7 +39,6 @@
 	@include bp-min-width($medium) {
 		width: 618px;
 		height: 318px;
-		padding: $base 40px;
 	}
 }
 

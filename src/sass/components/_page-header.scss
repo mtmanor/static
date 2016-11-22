@@ -1,7 +1,11 @@
 
 .page-header {
-	padding: $base*3 0;
+	padding: $base 0;
 	text-align: center;
+
+	@include bp-min-width($medium) {
+		padding: $base*3 0;
+	}
 }
 
 .page-header .title__h1 {
@@ -9,10 +13,14 @@
 }
 
 .page-header p {
-	@include font-size(24px);
+	@include font-size(18px);
 	display: inline-block;
 	max-width: 830px;
 	font-family: $serif;
 	font-weight: $weight-light;
-	line-height: 1.25;
+
+	@include bp-min-width($large) {
+		@include font-size(24px);
+		line-height: 1.25;
+	}
 }
