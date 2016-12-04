@@ -78,6 +78,28 @@ select::-ms-expand {
 }
 
 
+/** Number Field ============**/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-item--number {
+  position: relative;
+  display: inline-block;
+}
+
+.form-field--number {
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  border: 2px solid $navy;
+  font-weight: $weight-medium;
+}
+
+
 /** Errors ============**/
 
 .form-error {}

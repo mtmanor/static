@@ -58,6 +58,17 @@ a {
   }
 }
 
+.btn__solid-navy {
+  border-color: $navy;
+  background: $navy;
+  color: #fff;
+
+  &:hover {
+    background: transparent;
+    color: $navy;
+  }
+}
+
 
 input[type="submit"],
 input[type="button"],

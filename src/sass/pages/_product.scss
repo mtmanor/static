@@ -21,7 +21,6 @@
 }
 
 .product-title {
-	margin-bottom: 12px;
 	line-height: 1.166;
 }
 
@@ -30,22 +29,38 @@
 }
 
 .product-price {
-	margin-bottom: $base;
+	margin-bottom: 30px;
 	color: $salmon;
 	line-height: 1.166;
 }
 
 .product-variants {
-	margin-bottom: $base;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.product-label {
+	@include font-size(14px);
+	width: 80px;
+	margin-right: 20px;
+	font-weight: $weight-medium;
+	text-transform: uppercase;
 }
 
 .variant-item--color {
+	position: relative;
+	transform: rotate(45deg);
 	display: inline-block;
-	width: 25px;
-	height: 25px;
-	border: 1px solid $navy;
-	border-radius: 50%;
-	box-shadow: inset 0 1px 0 rgba(#fff, 1), inset 1px 0 0 rgba(#fff, 1), inset 0 -1px 0 rgba(#fff, 1), inset -1px 0 0 rgba(#fff, 1);
+	width: 20px;
+	height: 20px;
+	margin-right: -4px;
+}
+
+.variant-item--color.is-active {
+	width: 30px;
+	height: 30px;
+	z-index: 5;
 }
 
 .variant-item--color__brown {
@@ -58,6 +73,10 @@
 
 .variant-item--color__navy {
 	background: $navy;
+}
+
+.product-quantity {
+	margin-bottom: 30px;
 }
 
 .product-purchase,

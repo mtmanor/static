@@ -47,7 +47,7 @@
   font-weight: $weight-medium;
 
   @include bp-min-width($large) {
-    @include font-size(18px);
+    @include font-size(16px);
   }
 }
 
